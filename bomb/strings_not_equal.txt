@@ -1,3 +1,4 @@
+0000000000401338 <strings_not_equal>:
   401338:	41 54                	push   %r12
   40133a:	55                   	push   %rbp
   40133b:	53                   	push   %rbx
@@ -35,5 +36,4 @@
   40139d:	5b                   	pop    %rbx
   40139e:	5d                   	pop    %rbp
   40139f:	41 5c                	pop    %r12
-  4013a1:	c3                   	ret    
-
+  4013a1:	c3                   	ret
