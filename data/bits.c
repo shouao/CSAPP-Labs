@@ -161,7 +161,7 @@ int getByte(int x, int n) {
  *   Rating: 3 
  */
 int logicalShift(int x, int n) {
-  return (x>>n) ^ (((1<<31) & x)>>(n - 1));
+  return (x>>n) ^ ((((1<<31) & x)>>((n + ~1 + 1)))&((!!n)<<31>>31));
 }
 /*
  * bitCount - returns count of number of 1's in word
@@ -190,6 +190,7 @@ int bitCount(int x) {
   count = (count & mask3) + ((count >> 4) & mask3);
   count = (count & mask4) + ((count >> 8) & mask4);
   count = (count & mask5) + ((count >> 16) & mask5);
+  return count;
 }
 /* 
  * bang - Compute !x without using !
@@ -199,7 +200,13 @@ int bitCount(int x) {
  *   Rating: 4 
  */
 int bang(int x) {
-  return (~((~x + 1) ^ (~x)))>>32;
+    x = ~x;
+    x = x & (x>>16);
+    x = x & (x>>8);
+    x = x & (x>>4);
+    x = x & (x>>2);
+    x = x & (x>>1);
+    return x&1;
 }
 /* 
  * tmin - return minimum two's complement integer 
@@ -220,7 +227,7 @@ int tmin(void) {
  *   Rating: 2
  */
 int fitsBits(int x, int n) {
-  return !!((x>>n) ^ (((1<<31) & x)>>(n - 1)));
+  return !((x & ((1<<31)>>(33 + ~n))) ^ (((1<<31)&x)>>(33 + ~n)));
 }
 /* 
  * divpwr2 - Compute x/(2^n), for 0 <= n <= 30
@@ -231,7 +238,8 @@ int fitsBits(int x, int n) {
  *   Rating: 2
  */
 int divpwr2(int x, int n) {
-    return (x + (((x>>31)&1)<<n) - ((x>>31)&1))>>n;
+    int sign = (x>>31)&1;
+    return (x + (sign<<n) + ~sign + 1)>>n;
 }
 /* 
  * negate - return -x 
@@ -251,7 +259,7 @@ int negate(int x) {
  *   Rating: 3
  */
 int isPositive(int x) {
-  return !(((~x)>>31)&1);
+  return (!(x&(1<<31))) & (!!(x^0));
 }
 /* 
  * isLessOrEqual - if x <= y  then return 1, else return 0 
@@ -265,7 +273,7 @@ int isLessOrEqual(int x, int y) {
   int sign_y = (y>>31)&1;
   int is_same = !(sign_x ^ sign_y);
   int sign_sub = !(y + (~x) + 1)>>31;
-  return (is_same & sign_sub)|((!is_same) & sign_x);
+  return (!(x^y))|(is_same & sign_sub)|((!is_same) & sign_x);
 }
 /*
  * ilog2 - return floor(log base 2 of x), where x > 0
@@ -275,6 +283,7 @@ int isLessOrEqual(int x, int y) {
  *   Rating: 4
  */
 int ilog2(int x) {
+
   return 2;
 }
 /* 
