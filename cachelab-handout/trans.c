@@ -19,9 +19,20 @@ int is_transpose(int M, int N, int A[N][M], int B[M][N]);
  *     searches for that string to identify the transpose function to
  *     be graded. 
  */
+
+#define min(x, y) ((x)<(y)?(x):(y))
+
 char transpose_submit_desc[] = "Transpose submission";
-void transpose_submit(int M, int N, int A[N][M], int B[M][N])
-{
+void transpose_submit(int M, int N, int A[N][M], int B[M][N]) {
+    for (int i = 0; i < N; i += 8) {
+        for (int j = 0; j < M; j += 8) {
+            for (int x = i; x < min(i + 8, N); ++x) {
+                for (int y = j; y < min(j + 8, M); ++y) {
+                    B[y][x] = A[x][y];
+                }
+            }
+        }
+    }
 }
 
 /* 
