@@ -16,15 +16,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbbb33ec-19f7-40a1-9e96-a41af9ae35e4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/.marker" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/.marker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/shouao-handin.tar" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/shouao-handin.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/test-trans" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/test-trans" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/trace.f0" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/trace.f0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/trace.f1" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/trace.f1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/trace.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/trace.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/tracegen" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/tracegen" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/trans.c" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/trans.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cachelab-handout/trans.o" beforeDir="false" afterPath="$PROJECT_DIR$/../cachelab-handout/trans.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/t.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/amptjp-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/binary-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/binary2-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/cccp-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/coalescing-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/cp-decl-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/expr-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/random-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/random2-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/realloc-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/realloc2-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/short1-bal.rep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traces/short2-bal.rep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clock.o" beforeDir="false" afterPath="$PROJECT_DIR$/clock.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fcyc.o" beforeDir="false" afterPath="$PROJECT_DIR$/fcyc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fsecs.o" beforeDir="false" afterPath="$PROJECT_DIR$/fsecs.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ftimer.o" beforeDir="false" afterPath="$PROJECT_DIR$/ftimer.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mdriver" beforeDir="false" afterPath="$PROJECT_DIR$/mdriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mdriver.o" beforeDir="false" afterPath="$PROJECT_DIR$/mdriver.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memlib.o" beforeDir="false" afterPath="$PROJECT_DIR$/memlib.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mm.c" beforeDir="false" afterPath="$PROJECT_DIR$/mm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mm.o" beforeDir="false" afterPath="$PROJECT_DIR$/mm.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +86,9 @@
       </map>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2022" />
@@ -106,9 +126,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665059090274</updated>
-      <workItem from="1665059091625" duration="5000" />
+      <workItem from="1665059091625" duration="41616000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
